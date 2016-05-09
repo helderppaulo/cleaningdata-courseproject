@@ -1,5 +1,5 @@
-# cleaningdata-courseproject CodeBook
-
+CodeBook
+=================
 The output from the analysis (result from the groupBySubjectAndActivity function) is a data.frame consisting in the groups of the pair subject + activity. Because there are six different activities and 30 subjects, the data frame contains 180 observations and 68 variables, described below. The content of the observations is the average value between all observations inside that group.
 
 Feature Selection 
@@ -12,8 +12,6 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-
 
  - activity : One of the six activities done by the subjects (laying, sitting, standing, walking, walking_downstairs, walking_upstairs)
  - subject : Identifier of the subject that performed the activity.
