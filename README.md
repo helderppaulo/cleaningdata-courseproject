@@ -39,3 +39,7 @@ groupBySubjectAndActivity <- function(df) {
 	grouped[order(grouped$activity,grouped$subject),]
 }
 ```
+
+The tidyDataset function reads the test and train datasets, remove the unnecessary columns (the ones that are not mean or std) for both datasets and merges them adding a new column "type" distinguishing if the observation is a training or test data. It also transposes the data frame so the observations are listed as rows and each feature is a column. Therefore it adds the activity (translated into descriptive string) and subject columns.
+
+The groupBySubjectAndActivity function receives a tidy dataset, created by the tidyDataset function, that groups the data by the activity then subject. And sorts it by the same columns recpectively.
